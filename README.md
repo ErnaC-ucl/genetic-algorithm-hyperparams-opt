@@ -24,3 +24,10 @@ Other relevant options for the Differential Evolution algorithm are :
 - Mutation constant. This value controls how much the parameters change during the mutation stage. A larger value means a larger search radius but slows down convergence. We use the default value of mutation=0.5.
 - Recombination constant. This constant controls how likely the parameters of trial vectors are to change during the recombination stage. Larger values mean that mutations are more likely to be accepted, which may accelerate convergence at the risk of causing population instability. We use the default value of recombination=0.7.
 - Tolerance. This value controls when the algorithm is considered to converge. We will use tol=0.01, meaning that the algorithm is considered to be converged when the standard deviation of the RMSE of all vectors in the population is smaller than 1% of the average RMSE.
+
+## Results 
+
+We can observe how the algorithm has been exploring different configurations within the set boundaries and it has eventually converged into an (α,γ) combination that minimizes the RMSE.
+
+![](Images/Genetic_algo.png)
+
